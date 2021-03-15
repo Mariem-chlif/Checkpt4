@@ -1,0 +1,20 @@
+ALGORITHM  Insertion_sort
+VAR
+    i , j , n, v  INTEGER;
+    array : ARRAY_OF INTEGER[n];
+BEGIN
+Write ("Please enter n:" );
+read(n);
+
+FOR i FROM 0 TO array.length-1   DO
+    v := array[i]  // ELEMENET 
+    j := i  // RANG 
+WHILE (j>0 AND array[j-1]>v) DO
+     array[j]:=array[j-1] // on décale l'élément
+    j:=j-1
+END_WHILE
+    array[j]:= v
+END_FOR
+    Write(array);
+
+END
